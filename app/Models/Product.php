@@ -16,12 +16,10 @@ class Product extends Model
         'price',
         'is_active',
         'is_featured',
-        'in_stock',
+        'in_stok',
         'on_sale'
     ];
-    protected $cast = [
-        'images' => 'array',
-    ];
+    protected $casts = ['images' => 'array'];
 
     public function category()
     {
