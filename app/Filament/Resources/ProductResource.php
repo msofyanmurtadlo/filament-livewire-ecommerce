@@ -113,10 +113,7 @@ class ProductResource extends Resource
                 TextColumn::make('brand.name')
                     ->sortable(),
                 TextColumn::make('price')
-                    ->formatStateUsing(
-                        fn($state) => Str::of(Number::currency($state, 'IDR', 'id'))
-                            ->replace(',00', '')
-                    )
+                    ->formatStateUsing(fn($state) => Str::of(Number::currency($state, 'IDR', 'id'))->replace(',00', ''))
                     ->sortable(),
                 IconColumn::make('is_featured')
                     ->boolean(),
