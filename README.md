@@ -1,4 +1,5 @@
 Aplikasi E-commerce Berbasis Laravel 11, Filament 3, Livewire 3, dan Tailwind CSS
+
 Deskripsi Proyek
 Aplikasi E-commerce ini dikembangkan untuk menyediakan platform yang efisien dan mudah digunakan, yang menggabungkan teknologi modern untuk memberikan pengalaman pengguna yang optimal dan pengelolaan backend yang intuitif. Aplikasi ini dibangun menggunakan Laravel 11, framework PHP yang terkenal karena kestabilannya, Filament 3, framework untuk pembuatan admin panel yang sangat mudah dikustomisasi, serta Livewire 3 untuk interaksi real-time antara frontend dan backend. Selain itu, Tailwind CSS digunakan untuk mendesain tampilan frontend yang responsif dan modern.
 
