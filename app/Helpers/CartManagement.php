@@ -61,7 +61,7 @@ class CartManagement
                     'image' => $product->images[0],
                     'quantity' => $qty,
                     'unit_amount' => $product->price,
-                    'total_amount' => $product->price
+                    'total_amount' => $qty * $product->price
                 ];
             }
         }
@@ -84,17 +84,17 @@ class CartManagement
 
     static public function addCartItemsToCookie($cart_items)
     {
-        Cookie::queue('cart_item', json_encode($cart_items), 60 * 24 * 30);
+        Cookie::queue('cart_items', json_encode($cart_items), 60 * 24 * 30);
     }
 
     static public function clearCartItems()
     {
-        Cookie::queue(Cookie::forget('cart_item'));
+        Cookie::queue(Cookie::forget('cart_items'));
     }
 
     static public function getCartItemsFromCookie()
     {
-        $cart_items = json_decode(Cookie::get('cart_item'), true);
+        $cart_items = json_decode(Cookie::get('cart_items'), true);
         if (!$cart_items) {
             $cart_items = [];
         }
