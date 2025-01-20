@@ -64,11 +64,13 @@
                                 <div class="flex items-center justify-between w-full">
                                     <p class="text-base leading-4 text-gray-800 dark:text-gray-400">Discount
                                     </p>
-                                    <p class="text-base leading-4 text-gray-600 dark:text-gray-400">00</p>
+                                    <p class="text-base leading-4 text-gray-600 dark:text-gray-400">
+                                        {{ Str::of(Number::currency(0, 'IDR', 'id'))->replace(',00', '') }}</p>
                                 </div>
                                 <div class="flex items-center justify-between w-full">
                                     <p class="text-base leading-4 text-gray-800 dark:text-gray-400">Shipping</p>
-                                    <p class="text-base leading-4 text-gray-600 dark:text-gray-400">00</p>
+                                    <p class="text-base leading-4 text-gray-600 dark:text-gray-400">
+                                        {{ Str::of(Number::currency(0, 'IDR', 'id'))->replace(',00', '') }}</p>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between w-full">
