@@ -73,7 +73,7 @@ class OrderResource extends Resource
                                 'processing' => 'Processing',
                                 'shipped' => 'Shipped',
                                 'delivered' => 'Delivered',
-                                'cancelled' => 'Cancelled'
+                                'canceled' => 'Canceled'
                             ])->inline()->default('new')
                             ->required()
                             ->colors([
@@ -203,7 +203,7 @@ class OrderResource extends Resource
                         'processing' => 'Processing',
                         'shipped' => 'Shipped',
                         'delivered' => 'Delivered',
-                        'cancelled' => 'Cancelled'
+                        'canceled' => 'Canceled'
                     ])->searchable()
                     ->sortable(),
                 TextColumn::make('created_at')
